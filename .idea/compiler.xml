@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Politiesysteem" />
         <module name="Registratie-verplaatsing" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Politiesysteem" target="1.8" />
       <module name="Registratie-verplaatsing" target="1.8" />
     </bytecodeTargetLevel>
   </component>

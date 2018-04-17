@@ -1,6 +1,8 @@
 package rest;
 
 import entities.Vehicle;
+import entities.test;
+import io.sentry.Sentry;
 import services.VehicleService;
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -12,19 +14,6 @@ public class VehicleResource {
 
 	@Inject
 	VehicleService vehicleService;
-
-	@POST
-	@Path("/create")
-	@Consumes(MediaType.APPLICATION_JSON)
-	public Response create(Vehicle vehicle){
-		try{
-			vehicleService.createVehicle(vehicle);
-			return Response.ok().build();
-		}
-		catch(Exception e){
-			return Response.serverError().build();
-		}
-	}
 
 	@GET
 	@Path("/get/{id}")
@@ -39,16 +28,46 @@ public class VehicleResource {
 		}
 	}
 
+	@GET
+	@Path("/get/{licensePlate}")
+	public Response get(@PathParam("licensePlate") String licensePlate) {
+		return Response.noContent().build();
+	}
+
 	@PUT
-	@Path("/update")
-	@Produces(MediaType.APPLICATION_JSON)
-	public Response update(Vehicle vehicle){
-		try{
-			vehicleService.updateVehicle(vehicle);
-			return Response.ok().build();
+	@Path("/setStolen")
+	public Response setVehicleAsStolen(String licensePlate) {
+		try {
+			vehicleService.setVehicleAsStolen(licensePlate);
+			return Response.status(204).build();
+
 		}
-		catch(Exception e){
+		catch(Exception e) {
 			return Response.serverError().build();
 		}
+	}
+
+	@PUT
+	@Path("/setFound")
+	public Response setVehicleAsFound(String licensePlate){
+		return Response.noContent().build();
+	}
+
+	@GET
+	@Path("/getOwnerHistory/{id}")
+	public Response getOwnerHistory(@PathParam("id") long verhicleId) {
+		return Response.noContent().build();
+	}
+
+	@GET
+	@Path("/getTranslocations/{id}")
+	public Response getTranslocations(@PathParam("id") long id) {
+		return Response.noContent().build();
+	}
+
+	@GET
+	@Path("/getStolenVehicles")
+	public Response getStolenVehicles() {
+		return Response.noContent().build();
 	}
 }

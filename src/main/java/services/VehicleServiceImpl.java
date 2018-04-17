@@ -18,11 +18,11 @@ public class VehicleServiceImpl implements VehicleService {
 	}
 
 	@Override
-	public void createVehicle(Vehicle vehicle) {
-		vehicleDao.createVehicle(vehicle);
+	public boolean setVehicleAsStolen(String licensePlate) {
+		return true;
 	}
 
-	@Override
+
 	public void updateVehicle(Vehicle vehicle) {
 		vehicleDao.updateVehicle(vehicle);
 	}

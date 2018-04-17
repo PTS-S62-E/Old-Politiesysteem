@@ -8,7 +8,7 @@ import javax.persistence.PersistenceContext;
 @Stateless
 public class VehicleDaoImpl implements VehicleDao {
 
-	@PersistenceContext(name = "movementRegistrationPU")
+	@PersistenceContext(name = "policePU")
 	EntityManager em;
 
 	@Override

@@ -11,14 +11,8 @@ public interface VehicleService {
 	Vehicle getVehicle(long id);
 
 	/**
-	 * create a new vehicle.
-	 * @param vehicle
+	 * set a vehicle as stolen.
+	 * @param licensePlate
 	 */
-	void createVehicle(Vehicle vehicle);
-
-	/**
-	 * update a vehicle.
-	 * @param vehicle
-	 */
-	void updateVehicle(Vehicle vehicle);
+	boolean setVehicleAsStolen(String licensePlate);
 }

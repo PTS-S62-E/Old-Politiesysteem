@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Registratie-verplaatsing.iml" filepath="$PROJECT_DIR$/Registratie-verplaatsing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Politiesysteem.iml" filepath="$PROJECT_DIR$/Politiesysteem.iml" />
     </modules>
   </component>
 </project>
