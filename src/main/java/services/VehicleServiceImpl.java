@@ -17,12 +17,12 @@ public class VehicleServiceImpl implements VehicleService {
 		return vehicleDao.getVehicle(id);
 	}
 
-	@Override
-	public void createVehicle(Vehicle vehicle) {
-		vehicleDao.createVehicle(vehicle);
-	}
+    @Override
+    public boolean setVehicleAsStolen(long vehicleId) {
+		return true;
+    }
 
-	@Override
+
 	public void updateVehicle(Vehicle vehicle) {
 		vehicleDao.updateVehicle(vehicle);
 	}

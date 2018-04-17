@@ -11,16 +11,12 @@ import java.util.List;
 @Stateless
 public class TranslocationDaoImpl implements TranslocationDao {
 
-	@PersistenceContext(name = "movementRegistrationPU")
+	@PersistenceContext(name = "policePU")
 	EntityManager em;
 
 	@Override
 	public List<Translocation> getTranslocations(long vehicleId, LocalDateTime startTime, LocalDateTime endTime) {
-		TypedQuery<Translocation> query =
-				em.createNamedQuery("Translocation.getTranslocationsByVehicleIdAndTimePeriod", Translocation.class);
-		return query.setParameter("vehicleId", vehicleId)
-				.setParameter("startDate", startTime)
-				.setParameter("endDate", endTime).getResultList();
+		return null;
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 <!--TODO: ADD NAMES AND CORRECT DRIVERS-->
 <persistence>
-    <persistence-unit name="movementRegistrationPU" transaction-type="JTA">
-        <jta-data-source>java:/RegistratieDB</jta-data-source>
+    <persistence-unit name="policePU" transaction-type="JTA">
+        <jta-data-source>java:/PolitieDS</jta-data-source>
         <properties>
             <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
             <property name="hbm2ddl.auto" value="update"/>

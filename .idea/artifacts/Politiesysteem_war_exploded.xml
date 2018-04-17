@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Registratie-verplaatsing:war exploded">
-    <output-path>$PROJECT_DIR$/target/Registratie-verplaatsing</output-path>
+  <artifact type="exploded-war" name="Politiesysteem:war exploded">
+    <output-path>$PROJECT_DIR$/target/Politie-systeem</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Registratie-verplaatsing" />
+          <element id="module-output" name="Politiesysteem" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.github.PTS-S62-E:Osake:3.1.0" />
@@ -23,9 +23,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/Registratie-verplaatsing/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/Politie-systeem/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="Registratie-verplaatsing/web/Web" />
+      <element id="javaee-facet-resources" facet="Politiesysteem/web/Web" />
     </root>
   </artifact>
 </component>

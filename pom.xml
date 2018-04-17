@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.pts6</groupId>
-    <artifactId>Registratie-verplaatsing</artifactId>
+    <artifactId>Politie-systeem</artifactId>
     <packaging>war</packaging>
     <version>0.1</version>
-    <name>Registratie-Verplaatsing</name>
+    <name>Politie-Systeem</name>
     <url>http://maven.apache.org</url>
 
     <distributionManagement>
@@ -88,7 +88,7 @@
 
     <!-- Default build settings -->
     <build>
-        <finalName>Registratie-verplaatsing</finalName>
+        <finalName>Politie-systeem</finalName>
         <plugins>
             <plugin>
                 <groupId>org.wildfly.plugins</groupId>
@@ -130,7 +130,7 @@
         <profile>
             <id>development</id>
             <build>
-                <finalName>registratie-verplaatsing-development</finalName>
+                <finalName>politie-systeem-development</finalName>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -151,7 +151,7 @@
         <profile>
             <id>staging</id>
             <build>
-                <finalName>registratie-verplaatsing-staging</finalName>
+                <finalName>politie-systeem-staging</finalName>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -170,7 +170,7 @@
         <profile>
             <id>production</id>
             <build>
-                <finalName>registratie-verplaatsing</finalName>
+                <finalName>politie-systeem</finalName>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
