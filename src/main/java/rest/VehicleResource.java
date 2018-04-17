@@ -2,6 +2,7 @@ package rest;
 
 import entities.Vehicle;
 import entities.test;
+import io.sentry.Sentry;
 import services.VehicleService;
 import javax.inject.Inject;
 import javax.ws.rs.*;

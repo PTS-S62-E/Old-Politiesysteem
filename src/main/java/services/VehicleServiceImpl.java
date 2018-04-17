@@ -17,10 +17,10 @@ public class VehicleServiceImpl implements VehicleService {
 		return vehicleDao.getVehicle(id);
 	}
 
-    @Override
-    public boolean setVehicleAsStolen(long vehicleId) {
+	@Override
+	public boolean setVehicleAsStolen(String licensePlate) {
 		return true;
-    }
+	}
 
 
 	public void updateVehicle(Vehicle vehicle) {
